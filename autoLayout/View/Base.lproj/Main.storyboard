@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8b-RL-F9c">
+                                <rect key="frame" x="0.0" y="44" width="414" height="404"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNd-Ka-sB2">
+                                <rect key="frame" x="0.0" y="458" width="414" height="404"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J8b-RL-F9c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Si-dq-wT8"/>
+                            <constraint firstItem="HNd-Ka-sB2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="871-co-6c3"/>
+                            <constraint firstItem="HNd-Ka-sB2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ERR-JH-slk"/>
+                            <constraint firstItem="J8b-RL-F9c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lga-Op-hYq"/>
+                            <constraint firstItem="HNd-Ka-sB2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X9g-SA-fuy"/>
+                            <constraint firstItem="J8b-RL-F9c" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bgy-Ri-Wds"/>
+                            <constraint firstItem="HNd-Ka-sB2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="458" id="p9R-h3-PxA"/>
+                            <constraint firstItem="HNd-Ka-sB2" firstAttribute="top" secondItem="J8b-RL-F9c" secondAttribute="bottom" constant="10" id="yYu-ml-xQZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+</document>
