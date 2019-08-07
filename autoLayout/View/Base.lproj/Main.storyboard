@@ -18,31 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNd-Ka-sB2">
-                                <rect key="frame" x="0.0" y="246" width="414" height="414"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dp1-UP-djI">
-                                        <rect key="frame" x="103.5" y="103.5" width="207" height="207"/>
-                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="207" id="W3y-ag-vWp"/>
-                                            <constraint firstAttribute="height" constant="207" id="km0-oQ-4fI"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubE-eY-mLU" userLabel="purple">
+                                <rect key="frame" x="207" y="430" width="90" height="90"/>
                                 <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="purple"/>
                                 <constraints>
-                                    <constraint firstItem="Dp1-UP-djI" firstAttribute="centerX" secondItem="HNd-Ka-sB2" secondAttribute="centerX" id="2KJ-Cq-e3z"/>
-                                    <constraint firstItem="Dp1-UP-djI" firstAttribute="centerY" secondItem="HNd-Ka-sB2" secondAttribute="centerY" id="Sd7-gZ-Vyh"/>
-                                    <constraint firstAttribute="height" constant="414" id="Zgg-KB-ofO"/>
-                                    <constraint firstAttribute="width" constant="414" id="xgQ-DF-alh"/>
+                                    <constraint firstAttribute="height" constant="90" id="1kM-qj-a4x"/>
+                                    <constraint firstAttribute="width" constant="90" id="dJO-dr-xkt"/>
+                                </constraints>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ton-49-fAn" userLabel="Teal">
+                                <rect key="frame" x="117" y="430" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="teal"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Mlk-mE-jzL"/>
+                                    <constraint firstAttribute="width" constant="90" id="VdC-TI-AMv"/>
+                                </constraints>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-IO-oWR" userLabel="pink1">
+                                <rect key="frame" x="117" y="340" width="180" height="90"/>
+                                <color key="backgroundColor" red="0.79373785620000004" green="0.093668617440000004" blue="0.72579227499999999" alpha="0.3379708904" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="pink1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="RLZ-yl-f8Y"/>
+                                    <constraint firstAttribute="height" constant="90" id="jJn-e2-Dm9"/>
+                                </constraints>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZKS-8e-hnW" userLabel="pink1">
+                                <rect key="frame" x="117" y="520" width="180" height="90"/>
+                                <color key="backgroundColor" red="0.79373785620000004" green="0.093668617440000004" blue="0.72579227499999999" alpha="0.3379708904" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="pink1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="7A4-mR-rbV"/>
+                                    <constraint firstAttribute="width" constant="180" id="ueL-4F-KZY"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="HNd-Ka-sB2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8Gt-RE-mYm"/>
-                            <constraint firstItem="HNd-Ka-sB2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AtR-ZT-Cr2"/>
+                            <constraint firstItem="ubE-eY-mLU" firstAttribute="top" secondItem="2bl-IO-oWR" secondAttribute="bottom" id="3ac-XC-Anf"/>
+                            <constraint firstItem="ZKS-8e-hnW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="FGt-uJ-ugS"/>
+                            <constraint firstItem="Ton-49-fAn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mcg-RP-vSa"/>
+                            <constraint firstItem="ZKS-8e-hnW" firstAttribute="top" secondItem="ubE-eY-mLU" secondAttribute="bottom" id="QqT-QZ-29O"/>
+                            <constraint firstItem="2bl-IO-oWR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="296" id="VxU-Ea-hu1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZKS-8e-hnW" secondAttribute="trailing" constant="117" id="hH4-Xn-z9j"/>
+                            <constraint firstItem="Ton-49-fAn" firstAttribute="top" secondItem="ubE-eY-mLU" secondAttribute="top" id="hql-77-lKH"/>
+                            <constraint firstItem="2bl-IO-oWR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="lXI-l1-48k"/>
+                            <constraint firstItem="ubE-eY-mLU" firstAttribute="leading" secondItem="Ton-49-fAn" secondAttribute="trailing" id="swj-NL-qZ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2bl-IO-oWR" secondAttribute="trailing" constant="117" id="xiG-gj-0h1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
